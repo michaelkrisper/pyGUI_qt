@@ -1,5 +1,8 @@
 # pyGUI_qt
 
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This project is a demonstration of a simple GUI application written in Python with PyQt5. It provides a basic ID3 tag editor for music files.
 
 ## Features
@@ -64,3 +67,22 @@ The `Makefile` provides helpers for managing UI files and translations.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Project structure
+
+| Path | Purpose |
+|---|---|
+| `qt_demo.py` | Entry point loading the UI from a generated Python module |
+| `qt_uic_load.py` | Variant loading the `.ui` file directly at runtime |
+| `ui/` | Qt Designer `.ui` files and generated modules |
+| `lang/` | Translation sources for internationalization |
+| `Makefile`, `project.pro` | Regenerate UI modules and translations |
+
+## Related
+
+The ID3 parsing logic this demo displays lives in
+[pyMP3ID3](https://github.com/michaelkrisper/pyMP3ID3).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
